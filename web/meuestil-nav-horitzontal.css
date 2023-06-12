@@ -1,0 +1,71 @@
+ body {
+  font-family: segoe-ui_normal,Segoe UI,Segoe,Segoe WP,Helvetica Neue,Helvetica,sans-serif;
+  color: white;
+  font-size: 18px;
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    "main main aside"
+    "footer footer footer";
+  grid-template-rows: 80px 80px 1fr 50px;
+  grid-template-columns: 15% 1fr 18%;
+  grid-gap: 5px;
+  height: 100vh;
+  margin: 10px;
+}
+
+header {
+  grid-area: header;
+  background: green;
+  padding: 5px;
+}
+
+nav {
+  grid-area: nav;
+  background: blue;
+  padding: 5px;
+}
+
+main {
+  grid-area: main;
+  background: blue;
+  padding: 5px;
+}
+
+aside {
+  grid-area: aside;
+  background: green;
+  padding: 5px;
+}
+
+footer {
+  grid-area: footer;
+  background: green;
+  padding: 5px;
+}
+
+nav a{
+    text-decoration:none;
+    color:inherit;
+    } 
+nav li{
+    display:inline-block;
+    width:20%;
+    padding:5px;
+    background-color:green;
+    border:1px solid darkgreen;
+    text-align:center;
+    color:#fff;
+    }
+nav li:hover{
+    background-color:lightgreen;
+    color:#000;
+    }   
+
+article {
+  background: green;
+  padding: 5px;
+}
+
+
